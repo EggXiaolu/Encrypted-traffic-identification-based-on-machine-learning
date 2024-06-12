@@ -33,11 +33,13 @@ https://dxy.com（丁香花医生）
 
 ## 文件说明
 
-get_flows.ipynb —— 生成 .pcap 文件（在目录 pcap_data 下）、将 pcap 转换为 json（json_data.json）
+get_flows.ipynb —— 生成 .pcap 文件（在目录 pcap_data 下）、将 pcap 转换为 json（在目录 json_data 下）
 
 feature_extraction.ipynb —— 提取流量的特征值，生成 dataset.csv
 
-## 使用
+## 使用说明
+
+**_ps：磁盘至少 70G！！！_**
 
 ### 采集流量
 
@@ -68,3 +70,11 @@ feature_extraction.ipynb —— 提取流量的特征值，生成 dataset.csv
 5. 运行，本人大概运行 4h 采集完毕
 
 ### 提取特征值
+
+1. 避免提取 json 时爆内存，故使用 ijson 库
+2. 运行生成 dataset.csv
+   1. dataset.csv 头为 : classes,filename,stream_index,sni,len1...len30
+
+### 使用机器学习识别
+
+1.
