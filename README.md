@@ -37,6 +37,8 @@ get_flows.ipynb —— 生成 .pcap 文件（在目录 pcap_data 下）、将 pc
 
 feature_extraction.ipynb —— 提取流量的特征值，生成 dataset.csv
 
+calsses.ipynb —— 使用随机森林对加密流量进行分类
+
 ## 使用说明
 
 **_ps：磁盘至少 70G！！！_**
@@ -77,4 +79,4 @@ feature_extraction.ipynb —— 提取流量的特征值，生成 dataset.csv
 
 ### 使用机器学习识别
 
-1.
+1. 使用 stream_index,sni 和 len 作为特征值，对加密流量进行分类，具体可以通过调参增强模型的性能
